@@ -1,7 +1,7 @@
 import IconSun from '/images/icon-sun.svg';
 import MoonIcon from '/images/icon-moon.svg';
 
-export const theme = {
+export const themeConfig = {
     light: {
         name: 'light',
         layout: {
@@ -10,8 +10,8 @@ export const theme = {
         },
         todo: {
             backgroundColor: 'bg-neutral-very-light-grayish-blue',
-            borderColor: 'border-neutral-very-light-grayish-blue',
-            textColor: 'text-neutral-very-dark-grayish-blue'
+            borderColor: 'border-neutral-very-dark-grayish-blue-1',
+            textColor: 'text-neutral-very-dark-grayish-blue-1'
         },
         icon: IconSun
     },
@@ -19,12 +19,12 @@ export const theme = {
         name: 'dark',
         layout: {
             backgroundColor: 'bg-neutral-very-dark-blue',
-            textColor: 'text-neutral-light-grayish-blue-dark'
+            textColor: 'text-neutral-very-light-grayish-blue'
         },
         todo: {
-            backgroundColor: 'bg-neutral-very-darl-desaturated-blue',
+            backgroundColor: 'bg-neutral-very-dark-blue',
             borderColor: 'border-neutral-very-dark-grayish-blue-dark',
-            textColor: 'text-neutral-light-graish-blue-dark'
+            textColor: 'text-neutral-very-light-grayish-blue'
         },
         icon: MoonIcon
     }

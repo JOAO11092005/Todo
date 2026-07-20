@@ -1,11 +1,17 @@
+
+import { themeConfig } from "../../contexts/theme"
+import { ThemeContext } from "../../contexts/ThemeContext"
+
 const TodoList = () => {
     const todos = [
         { id: 1, text: 'Todo 1' },
         { id: 2, text: 'Todo 2' },
         { id: 3, text: 'Todo 3' }
     ]
+
+    const { theme } = useContext(ThemeContext)
     return (
-        <div className='bg-neutral-very-dark-desaturated-blue rounded-md '>
+        <div className={`${themeConfig[theme].layout.backgroundColor} rounded-md`} >
             <ul>
                 {
                     todos.map((todo) => (
