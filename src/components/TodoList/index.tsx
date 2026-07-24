@@ -44,7 +44,7 @@ const TodoList = ({ todoList, toggleTodoCompleted, setFilter, filter , clearComp
                                    
                                 </div>
                                  <button onClick={() => clearTodo(todo.id)} className="p-1 hover:bg-gradient-to-b from-[#fafafa] to-[#4a4747] b-r rounded-md cursor-pointer" >
-                                        <img src="/images/icon-cross.svg" alt="Remover Lista" />
+                                        <img src="/Todo/images/icon-cross.svg" alt="Remover Lista" />
                                     </button>
                             </li>
                         ))
