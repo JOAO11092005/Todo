@@ -1,20 +1,25 @@
 
+import { TodoContainer } from './components/TodoContainer'
 import TodoForm from './components/TodoForm'
 import TodoHeader from './components/TodoHeader'
 import TodoList from './components/TodoList'
-
+import { useTodo } from './hooks/useTodo'
 
 function App() {
+    const { addTodo , toggleTodoCompleted , filteredTodos , filter , setFilter , clearCompleted , clearTodo} = useTodo()
   return (
-    <main className="bg-neutral-very-dark-blue h-screen ">
-      <div className="bg-[url('/images/bg-desktop-dark.jpg')] h-80 bg-cover bg-center">
-        <div className='max-w-[43.75rem] m-auto p-8'>
-          <TodoHeader />
-          <TodoForm />
-          <TodoList />
-        </div>
-      </div>
-    </main>
+    <TodoContainer>
+      <TodoHeader />
+      <TodoForm addTodo={addTodo} />
+      <TodoList 
+      todoList={filteredTodos} 
+      toggleTodoCompleted={toggleTodoCompleted}
+      setFilter={setFilter}
+      filter={filter}
+      clearCompleted={clearCompleted}
+      clearTodo={clearTodo}
+      />
+    </TodoContainer>
   )
 }
 

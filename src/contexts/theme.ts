@@ -5,7 +5,8 @@ export const themeConfig = {
     light: {
         name: 'light',
         layout: {
-            backgroundColor: 'bg-neutral-very-light-grayish-blue',
+            heroImage: 'bg-light',
+            backgroundColor: 'bg-neutral-light-grayish-blue',
             textColor: 'text-neutral-very-dark-grayish-blue'
         },
         todo: {
@@ -13,19 +14,20 @@ export const themeConfig = {
             borderColor: 'border-neutral-very-dark-grayish-blue-1',
             textColor: 'text-neutral-very-dark-grayish-blue-1'
         },
-        icon: IconSun
+        icon: MoonIcon
     },
     dark: {
         name: 'dark',
         layout: {
+            heroImage: 'bg-dark',
             backgroundColor: 'bg-neutral-very-dark-blue',
-            textColor: 'text-neutral-very-light-grayish-blue'
+            textColor: 'text-neutral-very-dark-grayish-blue'
         },
         todo: {
-            backgroundColor: 'bg-neutral-very-dark-blue',
-            borderColor: 'border-neutral-very-dark-grayish-blue-dark',
-            textColor: 'text-neutral-very-light-grayish-blue'
+            backgroundColor: 'bg-neutral-very-dark-desaturated-blue',
+            borderColor: 'border-neutral-very-dark-grayish-blue',
+            textColor: 'text-neutral-light-grayish-blue'
         },
-        icon: MoonIcon
+        icon: IconSun
     }
 }
