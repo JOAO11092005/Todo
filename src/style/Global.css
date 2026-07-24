@@ -28,21 +28,21 @@
 
 @layer base {
   .bg-light {
-    @apply bg-[url('/images/bg-desktop-light.jpg')] bg-cover bg-center bg-no-repeat h-80;
+    @apply bg-[url('/Todo/images/bg-desktop-light.jpg')] bg-cover bg-center bg-no-repeat h-80;
   }
 
   .bg-dark {
-    @apply bg-[url('/images/bg-desktop-dark.jpg')] bg-cover bg-center bg-no-repeat;
+    @apply bg-[url('/Todo/images/bg-desktop-dark.jpg')] bg-cover bg-center bg-no-repeat;
   }
 
 }
 
  @media (max-width: 670px) {
     .bg-light {
-      @apply bg-[url('/images/bg-mobile-light.jpg')] bg-cover bg-center bg-no-repeat h-80;
+      @apply bg-[url('/Todo/images/bg-mobile-light.jpg')] bg-cover bg-center bg-no-repeat h-80;
     }
 
     .bg-dark {
-      @apply bg-[url('/images/bg-mobile-dark.jpg')] bg-cover bg-center bg-no-repeat;
+      @apply bg-[url('/Todo/images/bg-mobile-dark.jpg')] bg-cover bg-center bg-no-repeat;
     }
   }
