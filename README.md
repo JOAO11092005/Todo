@@ -1,75 +1,100 @@
-# React + TypeScript + Vite
+# 📝 Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um projeto desenvolvido como parte dos desafios do **Frontend Mentor**, com foco em praticar conceitos de **React**, manipulação de estado e estilização moderna.
 
-Currently, two official plugins are available:
+## 🚀 Sobre o projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Este projeto consiste em uma aplicação de lista de tarefas (Todo App), onde é possível:
 
-## React Compiler
+* ➕ Adicionar novas tarefas.
+* ✅ Marcar tarefas como concluídas.
+* 🗑️ Remover tarefas individualmente.
+* 🧹 Limpar todas as tarefas concluídas.
+* 📱 Utilizar uma interface responsiva para diferentes tamanhos de tela.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+O objetivo foi colocar em prática conceitos importantes do React, como gerenciamento de estado com Hooks, renderização dinâmica e atualização da interface de forma reativa.
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologias utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* React
+* JavaScript (ES6+)
+* Tailwind CSS
+* Vite
+* Git & GitHub
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🌐 Deploy
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+O projeto foi publicado utilizando **GitHub Pages**, permitindo que a aplicação fique disponível online de forma gratuita.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+🔗 **Acesse o projeto:**
 
+> Substitua pelo link do seu deploy: `https://seu-usuario.github.io/nome-do-repositorio`
+
+## 📂 Repositório
+
+🔗 **Código-fonte:**
+
+> Substitua pelo link do seu repositório no GitHub.
+
+## 🎯 Desafio
+
+Este projeto foi desenvolvido a partir de um desafio do **Frontend Mentor**, uma plataforma excelente para praticar desenvolvimento front-end através de projetos inspirados em interfaces reais.
+
+## 📸 Preview
+
+Adicione uma captura de tela do projeto nesta seção.
+
+```text
+📷 screenshot.png
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## ▶️ Como executar o projeto
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Clone o repositório:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+git clone https://github.com/seu-usuario/nome-do-repositorio.git
 ```
+
+Entre na pasta:
+
+```bash
+cd nome-do-repositorio
+```
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+Inicie o servidor de desenvolvimento:
+
+```bash
+npm run dev
+```
+
+Para gerar a versão de produção:
+
+```bash
+npm run build
+```
+
+## 📖 Aprendizados
+
+Durante o desenvolvimento deste projeto, foram praticados conceitos como:
+
+* Gerenciamento de estado com React Hooks.
+* Atualização dinâmica de listas.
+* Manipulação de eventos.
+* Componentização.
+* Estilização com Tailwind CSS.
+* Publicação de aplicações utilizando **GitHub Pages**.
+
+## 🙌 Agradecimentos
+
+Agradecimento ao **Frontend Mentor** pelos desafios que proporcionam uma ótima oportunidade para evoluir no desenvolvimento front-end.
+
+---
+
+Feito com ❤️ por você.
